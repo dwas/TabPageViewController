@@ -24,6 +24,7 @@ public struct TabPageOption {
      internal var tabBackgroundImage: UIImage {
         return convertImage()
     }
+    public var coverNavBar: Bool = false
 
     private func convertImage() -> UIImage {
         let rect : CGRect = CGRectMake(0, 0, 1, 1)

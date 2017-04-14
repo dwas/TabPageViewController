@@ -41,7 +41,7 @@ public class TabPageViewController: UIPageViewController {
 
         setupPageViewController()
         setupScrollView()
-        updateNavigationBar()
+        if option.coverNavBar { updateNavigationBar() }
     }
 
     override public func viewWillAppear(animated: Bool) {
@@ -59,7 +59,7 @@ public class TabPageViewController: UIPageViewController {
     override public func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
-        updateNavigationBar()
+        if option.coverNavBar { updateNavigationBar() }
     }
 
     override public func viewWillDisappear(animated: Bool) {
