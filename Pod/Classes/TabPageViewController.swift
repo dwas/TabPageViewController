@@ -25,9 +25,7 @@ public class TabPageViewController: UIPageViewController {
     }
     private var beforeIndex: Int = 0
     private var tabItemsCount = 0
-    private var defaultContentOffsetX: CGFloat {
-        return self.view.bounds.width
-    }
+    private var defaultContentOffsetX: CGFloat = UIScreen.mainScreen().bounds.width
     private var shouldScrollCurrentBar: Bool = true
     lazy private var tabView: TabView = self.configuredTabView()
 
@@ -67,6 +65,10 @@ public class TabPageViewController: UIPageViewController {
 
         navigationController?.navigationBar.shadowImage = nil
         navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: .Default)
+    }
+    
+    public func refreshTabs() {
+        tabView = configuredTabView()
     }
 }
 
