@@ -1,3 +1,10 @@
+# 0.2.10 Release notes (2017-04-21) - DWASDEN
+
+## Enhancements
+
+* does not cover the the nav bar (option)
+* provides a way to refresh for full screen width tabs
+
 # 0.2.6 Release notes (2017-03-30)
 
 ## Enhancements
